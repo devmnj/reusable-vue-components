@@ -7,7 +7,7 @@ This project contain a set of reusable vuejs components for web development. The
 * Other UI frame works
 
 # Animation and CSS
-The CSS animation and other class is adapted from codepen and from other resources. All I do is the Vue part. **Thank you for css developers for the awesome animation and design**
+The CSS animation and other class is adapted from codepen and from other resources. All I do is the Vue part. **Thanks for the awesome animation and design**
 ## Project setup
 ```
 npm install
