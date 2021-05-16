@@ -1,5 +1,13 @@
-# vuetmpl
+# About
+This project contain a set of reusable vuejs components for web development. These can be worked with 
+* CoreUI
+* Bootstrap
+* Vuetift
+* Quasar
+* Other UI frame works
 
+# Animation and CSS
+The CSS animation and other class is adapted from codepen and from other resources. All I do is the Vue part. **Thank you for css developers for the awesome animation and design**
 ## Project setup
 ```
 npm install
@@ -20,5 +28,5 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### More giudes and docs avaibale @ developer site
+See [JavaScript Superuser](https://javascriptsu.wordpress.com).
