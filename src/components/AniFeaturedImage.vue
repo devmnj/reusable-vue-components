@@ -1,18 +1,12 @@
 <template>
   <div>
-    <div
-      :class="[clsCard]"
-      
-    >
-      <h2
-        
-        :class="[clsTrans]"
-      >
+    <div :class="[clsCard]">
+      <h2 :class="[clsTrans]">
         {{ headline }}
       </h2>
       <p>{{ content }}</p>
       <div :class="[clsCtaCont, clsTrans]">
-        <a :href="`${link}`" class="cta"> {{linkCaption}} </a>
+        <a :href="`${link}`" class="cta"> {{ linkCaption }} </a>
       </div>
       <div :class="[clsCardCircle, clsTrans]"></div>
     </div>
@@ -25,22 +19,11 @@ export default {
   created() {},
   data() {
     return {
-      isFocused: false,
-      clsh2:'h2c',
-      isFocusedh2: false,
-      isFocusedp: false,
-      isFocusedh2sm: false,
-      clsCardHover: "cardhover",
-      clsCardCtaHover: "cardCtahover",
-      clsCardh2Hover: "cardhoverh2",
-      clsCardpHover: "cardhoverp",
-
       clsCardh2smHover: "cardsmh2sm",
       clsCard: "card",
       clsTrans: "transition",
       clsCtaCont: "cta-container",
       clsCardCircle: "card_circle",
-      clsCardCircleHover: "cardCirclehover",
       clsCta: "cta",
       clsCtaHover: "ctahover",
     };
@@ -69,7 +52,7 @@ export default {
   watch: {
     isFocused1() {
       console.log("Focused : " + this.isFocused);
-      return this.isFocused
+      return this.isFocused;
     },
   },
 };
@@ -117,7 +100,7 @@ export default {
   margin-top: -130px;
 }
 /* .card:hover h2 { */
-.card:hover h2   {
+.card:hover h2 {
   background: #3487f7;
   color: #fff;
   margin-top: 100px;
@@ -129,7 +112,7 @@ export default {
 }
 
 .card:hover p {
-/* .cardhoverp { */
+  /* .cardhoverp { */
   margin-top: 300px;
 }
 .card_circle {
