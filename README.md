@@ -1,5 +1,5 @@
 # About
-This project contain a set of reusable vuejs components for web development. These can be worked with 
+This project contain a set of reusable vuejs components for web development. These can be used with following UIs
 * CoreUI
 * Bootstrap
 * Vuetift
