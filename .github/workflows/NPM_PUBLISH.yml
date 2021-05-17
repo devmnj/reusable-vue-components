@@ -13,4 +13,4 @@ jobs:
       - run: npm test
       - uses: JS-DevTools/npm-publish@v1
         with:
-          token: ${{ PUBLISH_NPM_TOKEN }}
+          token: ${{PUBLISH_NPM_TOKEN}}
