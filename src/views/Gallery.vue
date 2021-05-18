@@ -15,8 +15,8 @@
         <FImgCard />
       </b-col>
       <b-col>
-        <h3>Animated Card</h3>
-        <FImgCard />
+        <h3>Hovered SVG</h3>
+        <HSVGCard title="Test Ttitle" bgColor=  #9bf881  />
       </b-col>
     </b-row>
     <b-row>
@@ -25,8 +25,12 @@
         <PCard />
       </b-col>
        <b-col>
+        <h3>Read More Card</h3>
+        <PostCard />
+      </b-col>
+       <b-col>
         <h3>Post Card</h3>
-        <PCard />
+        <PostCard />
       </b-col>
     </b-row>
   </b-container>
@@ -37,6 +41,10 @@
 import FlipCard from "../components/FlipCard.vue";
 import FImgCard from "../components/AniFeaturedImage.vue";
 import PCard from "../components/PCard.vue";
+import HSVGCard from "../components/HoverCard";
+import PostCard from "../components/PostCard";
+
+
 
 export default {
   name: "Gallery",
@@ -44,6 +52,8 @@ export default {
     FlipCard,
     FImgCard,
     PCard,
+    HSVGCard,
+    PostCard,
   },
 };
 </script>

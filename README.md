@@ -13,12 +13,13 @@ The CSS animation and other class is adapted from codepen and from other resourc
 * FlipCard
 * FImgCard - Animated Featured Image Card
 * PCard - Colorfull Profile Card
+* HSVGCard - Hover SVG Card
 
 ## Project setup
 ```
 npm install
 ```
-
+s
 ### Compiles and hot-reloads for development
 ```
 npm run serve
