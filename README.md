@@ -14,6 +14,7 @@ The CSS animation and other class is adapted from codepen and from other resourc
 * FImgCard - Animated Featured Image Card
 * PCard - Colorfull Profile Card
 * HSVGCard - Hover SVG Card
+* ImgCards - Picture Stack Card
 
 ## Project setup
 ```

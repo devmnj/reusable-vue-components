@@ -30,7 +30,7 @@
       </b-col>
        <b-col>
         <h3>Post Card</h3>
-        <PostCard />
+        <ImgCards />
       </b-col>
     </b-row>
   </b-container>
@@ -43,6 +43,7 @@ import FImgCard from "../components/AniFeaturedImage.vue";
 import PCard from "../components/PCard.vue";
 import HSVGCard from "../components/HoverCard";
 import PostCard from "../components/PostCard";
+import ImgCards from "../components/ImgCards.vue"
 
 
 
@@ -54,6 +55,7 @@ export default {
     PCard,
     HSVGCard,
     PostCard,
+    ImgCards,
   },
 };
 </script>
