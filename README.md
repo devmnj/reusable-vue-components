@@ -10,17 +10,18 @@ This project contain a set of reusable vuejs components for web development. The
 The CSS animation and other class is adapted from codepen and from other resources. All I do is the Vue part. **Thanks for the awesome animation and design**
 
 # Components
-* FlipCard
-* FImgCard - Animated Featured Image Card
-* PCard - Colorfull Profile Card
-* HSVGCard - Hover SVG Card
-* ImgCards - Picture Stack Card
+
+1. FlipCard
+2. FImgCard - Animated Featured Image Card
+3. PCard - Colorfull Profile Card
+4. HSVGCard - Hover SVG Card
+5. ImgCards - Picture Stack Card
+6. PostCard - Blog post Card
 
 ## Project setup
 ```
 npm install
 ```
-s
 ### Compiles and hot-reloads for development
 ```
 npm run serve
