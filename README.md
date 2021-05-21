@@ -11,12 +11,19 @@ The CSS animation and other class is adapted from codepen and from other resourc
 
 # Components
 
-1. FlipCard
-2. FImgCard - Animated Featured Image Card
-3. PCard - Colorfull Profile Card
-4. HSVGCard - Hover SVG Card
-5. ImgCards - Picture Stack Card
-6. PostCard - Blog post Card
+1.  FlipCard
+2.  FImgCard   - Animated Featured Image Card
+3.  PCard      - Colorfull Profile Card
+4.  HSVGCard   - Hover SVG Card
+5.  ImgCards   - Picture Stack Card
+6.  PostCard   - Blog post Card
+7.  HBox       - Boxed Animation
+8.  LBox       - Line Animation
+9.  FBox       - Fading Animation
+10. Clash Card - Clash of the Clan style
+11. Profiler   - Tween Profile picture
+12  SCard      - Reusable Product Card with Picture on Top
+13. OCard      - Picture with more info 
 
 ## Project setup
 ```

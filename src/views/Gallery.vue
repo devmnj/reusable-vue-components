@@ -16,7 +16,7 @@
       </b-col>
       <b-col>
         <h3>Hovered SVG</h3>
-        <HSVGCard title="Test Ttitle" bgColor=  #9bf881  />
+        <HSVGCard title="Test Ttitle" bgColor="#9bf881" />
       </b-col>
     </b-row>
     <b-row>
@@ -24,14 +24,37 @@
         <h3>Post Card</h3>
         <PCard />
       </b-col>
-       <b-col>
+      <b-col>
         <h3>Read More Card</h3>
         <PostCard />
       </b-col>
-       <b-col>
+      <b-col>
         <h3>Post Card</h3>
         <ImgCards />
       </b-col>
+      <b-row>
+        <b-col>
+          <HBox />
+        </b-col>
+        <b-col>
+          <FBox />
+        </b-col>
+        <b-col>
+          <LBox />
+        </b-col>
+      </b-row>
+
+      <b-row>
+        <b-col>
+          <Profiler />
+        </b-col>
+        <b-col>
+          <SCard />
+        </b-col>
+        <b-col>
+          <OCard />
+        </b-col>
+      </b-row>
     </b-row>
   </b-container>
 </template>
@@ -43,9 +66,13 @@ import FImgCard from "../components/AniFeaturedImage.vue";
 import PCard from "../components/PCard.vue";
 import HSVGCard from "../components/HoverCard";
 import PostCard from "../components/PostCard";
-import ImgCards from "../components/ImgCards.vue"
-
-
+import ImgCards from "../components/ImgCards.vue";
+import FBox from "../components/FBox.vue";
+import HBox from "../components/HBox.vue";
+import LBox from "../components/LBox.vue";
+import Profiler from "../components/Profiler.vue";
+import SCard from "../components/SCard.vue";
+import OCard from "../components/OCard.vue";
 
 export default {
   name: "Gallery",
@@ -56,6 +83,12 @@ export default {
     HSVGCard,
     PostCard,
     ImgCards,
+    SCard,
+    OCard,
+    HBox,
+    LBox,
+    FBox,
+    Profiler,
   },
 };
 </script>
