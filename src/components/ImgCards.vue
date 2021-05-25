@@ -1,13 +1,12 @@
 <template>
   <div class="card">
     <div class="imgBx">
-      <img
-        :src="`${img['src']}`"
-        :alt="`${img['alt']}`"
-      />
+      <img :src="`${img['src']}`" :alt="`${img['alt']}`" />
     </div>
     <div class="details">
-      <h2>SomeOne Famous<br /><span>Director</span></h2>
+      <slot name="details">
+        <h2>SomeOne Famous<br /><span>Director</span></h2>
+      </slot>
     </div>
   </div>
 </template>
@@ -22,12 +21,16 @@ export default {
   props: {
     img: {
       type: Object,
-      default: new Object({ src: "https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", alt: "images" }),
+      default: new Object({
+        src:
+          "https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        alt: "images",
+      }),
     },
-    details:{
+    details: {
       type: String,
-      default: "Some Artist"
-    }
+      default: "Some Artist",
+    },
   },
   methods: {},
 };

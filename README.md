@@ -1,10 +1,5 @@
 # About
-This project contain a set of reusable vuejs components for web development. These can be used with following UIs
-* CoreUI
-* Bootstrap
-* Vuetift
-* Quasar
-* Other UI frame works.
+This project contain a set of reusable vuejs components for web development using **Bulma** CSS.  
 
 # Animation and CSS
 The CSS animation and other class is adapted from codepen and from other resources. All I do is the Vue part. **Thanks for the awesome animation and design**
@@ -25,24 +20,59 @@ The CSS animation and other class is adapted from codepen and from other resourc
 12  SCard      - Reusable Product Card with Picture on Top
 13. OCard      - Picture with more info 
 
-## Project setup
+## How to use
+How to use the component in your projects ? drag and drop components to your project. 
+
+Install Bulma
+````
+npm i -s bulma
+or
+yarn add bulma
+````
+And enable bulma support by importing the css module in **main.js**
 ```
-npm install
-```
-### Compiles and hot-reloads for development
-```
-npm run serve
+import Vue from "vue";
+import App from "./App.vue";
+import "bulma/css/bulma.css";
 ```
 
-### Compiles and minifies for production
+then you can use the components as follows
+
 ```
-npm run build
+<template>
+<div>
+ <b-img  class="pt-5">
+                <template slot="details">
+                  <h1 class="is-size-5">Web Developer</h1>
+                  <span class="icon  ">
+                <i>
+                 <a  href="#"> <v-icon name="md-facebook" scale="1.5" /></a>
+                </i>
+                <i>
+                  <a  href="#"> <v-icon name="oi-octoface" scale="1.5" /></a>
+                </i>
+                 </span>
+                </template>
+  </b-img>
+  </div>
+</template>
+  <script>
+import ImgCards from '@/components/ImgCards'
+ 
+export default {
+  name: "ACards",
+  ... 
+  components: {
+    'b-img':ImgCards,
+  },
+};
+</script>
+
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+ 
+
+
 
 ### More giudes and docs avaibale @ developer site
 See [JavaScript Superuser](https://javascriptsu.wordpress.com).
