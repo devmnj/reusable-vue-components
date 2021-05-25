@@ -1,6 +1,7 @@
 # About
 This project contain a set of reusable vuejs components for web development using **Bulma** CSS.  
-
+## Demo
+A [demo](https://oh-vue-components.vercel.app/) of these component is the best way to explore..
 # Animation and CSS
 The CSS animation and other class is adapted from codepen and from other resources. All I do is the Vue part. **Thanks for the awesome animation and design**
 
