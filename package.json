@@ -2,18 +2,20 @@
   "name": "@manojap/reusable-vue-components",
   "version": "0.1.0",
   "private": false,
-  "repository":"git://github.com/manojap/reusable-vue-components.git",
+  "repository": "git://github.com/manojap/reusable-vue-components.git",
   "publishConfig": {
-  "registry":"https://npm.pkg.github.com"
-},
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+     "oh-vue-icons": "^0.4.3",
     "buefy": "^0.9.7",
-    "bulma": "^0.9.2", 
+    "bulma": "^0.9.2",
+    "oh-vue-icons": "^0.4.3",
     "vue": "^2.6.12",
     "vue-router": "^3.2.0"
   },
