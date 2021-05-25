@@ -25,36 +25,36 @@ export default {
       clsCtaCont: "cta-container",
       clsCardCircle: "card_circle",
       clsCta: "cta",
-      clsCtaHover: "ctahover",
+      clsCtaHover: "ctahover"
     };
   },
 
   props: {
     headline: {
       type: String,
-      default: "Awesome Headline",
+      default: "Awesome Headline"
     },
     content: {
       type: String,
       default:
-        "Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.",
+        "Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla."
     },
     link: {
       type: String,
-      default: "http://manojap.github.com",
+      default: "http://manojap.github.com"
     },
     linkCaption: {
       type: String,
-      default: "Read More",
-    },
+      default: "Read More"
+    }
   },
   methods: {},
   watch: {
     isFocused1() {
       console.log("Focused : " + this.isFocused);
       return this.isFocused;
-    },
-  },
+    }
+  }
 };
 /**
  * @author Manoj AP <http://github.com/manojap>
@@ -186,7 +186,9 @@ p {
   background-color: #3487f7;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #fff;
-  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 </style>

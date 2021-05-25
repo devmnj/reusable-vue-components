@@ -1,13 +1,13 @@
 <template>
-  <div
-    :style="{ width: width, height: height }"
-    :class="[  flipCardClass]"
-                   
-  >
-    <div :class="[  flipCardInnerClass]">
+  <div :style="{ width: width, height: height }" :class="[flipCardClass]">
+    <div :class="[flipCardInnerClass]">
       <div :style="{ background: frontCardColor }" class="flip-card-front">
         <slot name="front">
-          <img src="img_avatar.png" alt="Avatar" style="width: 300px; height: 300px" />
+          <img
+            src="img_avatar.png"
+            alt="Avatar"
+            style="width: 300px; height: 300px"
+          />
         </slot>
       </div>
       <div class="flip-card-back" :style="{ background: backCardColor }">
@@ -36,33 +36,33 @@ export default {
       isFocused: false,
       flipClass: "flip",
       flipCardClass: "flip-card",
-      flipCardInnerClass: "flip-card-inner",
+      flipCardInnerClass: "flip-card-inner"
     };
   },
   props: {
     frontCardColor: {
       type: String,
-      default: "#ff80c0",
+      default: "#ff80c0"
     },
     backCardColor: {
       type: String,
-      default: "#9cbd57",
+      default: "#9cbd57"
     },
     width: {
       type: String,
-      default: "300px",
+      default: "300px"
     },
     height: {
       type: String,
-      default: "300px",
-    },
+      default: "300px"
+    }
   },
   watch: {
     isFocused() {
       console.log("Focused : " + this.isFocused);
-    },
+    }
   },
-  methods: {},
+  methods: {}
 };
 </script>
 
@@ -72,7 +72,7 @@ export default {
   background-color: transparent;
   border: 1px solid #f1f1f1;
   perspective: 500px;
- 
+
   /* Remove this if you don't want the 3D effect */
 }
 

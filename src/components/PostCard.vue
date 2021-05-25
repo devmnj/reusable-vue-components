@@ -1,20 +1,20 @@
 <template>
   <div class="card">
-    <img
-      :src="img"
-    />
+    <img :src="img" />
     <div class="info">
-     <slot name="details">
-       <h1>Mountain</h1>
-      <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-      <button>Read More</button>
-     </slot>
+      <slot name="details">
+        <h1>Mountain</h1>
+        <p>
+          Lorem Ipsum is simply dummy text from the printing and typeseting
+          industry
+        </p>
+        <button>Read More</button>
+      </slot>
     </div>
   </div>
 </template>
 
 <script>
-
 /**
  * @file A Fancy Post Card with read more button
  * @author Manoj AP <manojap@outlook.com>* @
@@ -27,14 +27,13 @@ export default {
     return {};
   },
   props: {
-       
-      img:{
-         type:String,
-          default: "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
-      } 
-
+    img: {
+      type: String,
+      default:
+        "https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+    }
   },
-  methods: {},
+  methods: {}
 };
 </script>
 

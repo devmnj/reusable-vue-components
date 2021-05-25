@@ -1,8 +1,10 @@
 <template>
-  <div> <p class="is-size-5 has-text-danger">
-           The project can be found  <a href="http://github.com/manojap/reusable-vue-components">@ GitHub</a> 
-           
-        </p></div>
+  <div>
+    <p class="is-size-5 has-text-danger">
+      The project can be found
+      <a href="http://github.com/manojap/reusable-vue-components">@ GitHub</a>
+    </p>
+  </div>
 </template>
 
 <script>
@@ -13,7 +15,7 @@ export default {
     return {};
   },
   props: {},
-  methods: {},
+  methods: {}
 };
 </script>
 

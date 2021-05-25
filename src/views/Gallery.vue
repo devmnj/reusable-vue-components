@@ -88,8 +88,8 @@ export default {
     HBox,
     LBox,
     FBox,
-    Profiler,
-  },
+    Profiler
+  }
 };
 </script>
 

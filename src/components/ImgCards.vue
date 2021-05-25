@@ -24,15 +24,15 @@ export default {
       default: new Object({
         src:
           "https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        alt: "images",
-      }),
+        alt: "images"
+      })
     },
     details: {
       type: String,
-      default: "Some Artist",
-    },
+      default: "Some Artist"
+    }
   },
-  methods: {},
+  methods: {}
 };
 </script>
 

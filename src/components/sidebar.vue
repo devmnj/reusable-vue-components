@@ -4,26 +4,21 @@
     :class="['sidebar', 'sidebar', bgColor, { 'sidebar--open': isOpened }]"
   >
     <div
-      v-if="isClosed==true"
+      v-if="isClosed == true"
       id="trigger"
-      @click="isOpened = true, isClosed=false"
+      @click="(isOpened = true), (isClosed = false)"
       :class="['mt-3', 'trigger', 'has-text-centered']"
     >
       <v-icon fill="grey" name="gi-hamburger-menu" scale="1.5" />
     </div>
 
     <div
-      v-if="isOpened==true "
+      v-if="isOpened == true"
       id="trigger"
-      @click="isClosed = true,isOpened=false "
+      @click="(isClosed = true), (isOpened = false)"
       :class="['mt-3', 'trigger', 'has-text-centered']"
     >
-      <v-icon
-        
-        fill="grey"
-        name="fa-window-close"
-        scale="1.5"
-      />
+      <v-icon fill="grey" name="fa-window-close" scale="1.5" />
     </div>
 
     <slot>
@@ -33,8 +28,8 @@
       </div>
       <div class="sidebar-position">
         <v-icon fill="grey" name="fa-address-card" scale="1.8" />
-      </div> </slot
-    > 
+      </div>
+    </slot>
   </div>
 </template>
 
@@ -47,7 +42,7 @@ import {
   BiBatteryFull,
   GiHamburgerMenu,
   IoHome,
-  FaHamburger,
+  FaHamburger
 } from "oh-vue-icons/icons";
 OhVueIcon.add(
   FaWindowClose,
@@ -63,21 +58,21 @@ export default {
   props: {
     bgColor: {
       type: String,
-      default: "has-background-white",
-    },
+      default: "has-background-white"
+    }
   },
   name: "sidebar",
   created() {},
   data() {
     return {
       isOpened: false,
-      isClosed: true,
+      isClosed: true
     };
   },
-   
+
   components: {
-    "v-icon": OhVueIcon,
-  },
+    "v-icon": OhVueIcon
+  }
 };
 </script>
 

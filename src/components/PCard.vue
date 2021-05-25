@@ -5,9 +5,10 @@
       <div class="content">
         <slot name="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto ea tenetur
-            quas facere minima obcaecati mollitia sed ipsum quod, eius repellat nihil
-            quos. Saepe ipsa veritatis magni voluptates voluptatum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto
+            ea tenetur quas facere minima obcaecati mollitia sed ipsum quod,
+            eius repellat nihil quos. Saepe ipsa veritatis magni voluptates
+            voluptatum.
           </p>
           <div class="image">
             <img
@@ -45,12 +46,11 @@ export default {
     return {};
   },
   props: {},
-  methods: {},
+  methods: {}
 };
 </script>
 
 <style scoped>
- 
 .testimotionals {
   width: 350px;
   display: inline-block;

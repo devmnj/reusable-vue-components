@@ -7,7 +7,11 @@
     >
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+          <img
+            src="https://bulma.io/images/bulma-logo.png"
+            width="112"
+            height="28"
+          />
         </a>
 
         <a
@@ -28,7 +32,10 @@
           <router-link class="navbar-item" to="/">Home</router-link>
           <router-link class="navbar-item" to="/cards">Cards</router-link>
           <router-link class="navbar-item" to="/posts">Featured</router-link>
-          <!-- <router-link class="navbar-item" to="/gallery">Gallery</router-link> -->
+          <router-link class="navbar-item" to="/profile">Profile</router-link>
+          <router-link class="navbar-item" to="/text">Text Effects</router-link>
+
+          <router-link class="navbar-item" to="/gallery">Gallery</router-link>
 
           <!-- <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> More </a>
@@ -49,7 +56,12 @@
               <a class="button is-primary">
                 <strong>Contact</strong>
               </a>
-              <a class="button is-light" href="http://github.com/manojap/reusable-vue-components"> GitHub </a>
+              <a
+                class="button is-light"
+                href="http://github.com/manojap/reusable-vue-components"
+              >
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -57,7 +69,7 @@
     </nav>
     <div class="columns">
       <div class="column has-background-inf1o is-1 is-flex">
-        <sidebar bgColor="has-background-dark" style="top: 50px">
+        <sidebar bgColor="has-background-dark" style="top: 60px">
           <slot>
             <div class="sidebar-position" @click="snackbar">
               <v-icon fill="grey" name="fc-about" scale="1.8" />
@@ -82,12 +94,12 @@ OhVueIcon.add(FcAbout);
 export default {
   components: {
     sidebar,
-    "v-icon": OhVueIcon,
+    "v-icon": OhVueIcon
   },
   methods: {
     snackbar() {
       this.$buefy.snackbar.open(`Thank you, join me on github`);
-    },
-  },
+    }
+  }
 };
 </script>

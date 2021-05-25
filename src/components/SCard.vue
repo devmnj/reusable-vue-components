@@ -1,38 +1,45 @@
 <template>
-<div class="container">
-    <img src="https://s5.postimg.cc/n8uucy6qv/strawberryx300n.png" alt="Strawberry" class="img-fruit" />
-  <h3>Strawberries</h3>
-  <div class="control-btn">
-    <span class="prev">
-      <i class="fa fa-long-arrow-left"></i>
-    </span>
-    <span class="next">
-      <i class="fa fa-long-arrow-right"></i>
-    </span>
-  </div>
-  <p>
-    The garden strawberry is a widely grown hybrid species of the genus Fragaria. It is cultivated worldwide for its fruit.
-  </p>
-  <div class="properties">
-    <div class="qty">
-      <h4>Quantity</h4>
-      <i class="fa fa-minus"></i>
-      <span class="number">1</span>
-      <i class="fa fa-plus"></i>
-    </div><div class="price">
-      <h4>Total Price</h4>
-      <span class="price-inr">
-        <i class="fa fa-inr"></i>
-        <span class="amount">7</span>
+  <div class="container">
+    <img
+      src="https://s5.postimg.cc/n8uucy6qv/strawberryx300n.png"
+      alt="Strawberry"
+      class="img-fruit"
+    />
+    <h3>Strawberries</h3>
+    <div class="control-btn">
+      <span class="prev">
+        <i class="fa fa-long-arrow-left"></i>
       </span>
-    </div><div class="delivery">
-      <h4>Delivery</h4>
-      <i class="fa fa-fighter-jet"></i>
-      <span class="time">In 60 mins</span>
+      <span class="next">
+        <i class="fa fa-long-arrow-right"></i>
+      </span>
     </div>
+    <p>
+      The garden strawberry is a widely grown hybrid species of the genus
+      Fragaria. It is cultivated worldwide for its fruit.
+    </p>
+    <div class="properties">
+      <div class="qty">
+        <h4>Quantity</h4>
+        <i class="fa fa-minus"></i>
+        <span class="number">1</span>
+        <i class="fa fa-plus"></i>
+      </div>
+      <div class="price">
+        <h4>Total Price</h4>
+        <span class="price-inr">
+          <i class="fa fa-inr"></i>
+          <span class="amount">7</span>
+        </span>
+      </div>
+      <div class="delivery">
+        <h4>Delivery</h4>
+        <i class="fa fa-fighter-jet"></i>
+        <span class="time">In 60 mins</span>
+      </div>
+    </div>
+    <input class="ip-add-cart" type="button" value="Add to cart" />
   </div>
-  <input class="ip-add-cart" type="button" value="Add to cart" />
-</div>
 </template>
 
 <script>
@@ -43,11 +50,11 @@ export default {
     return {};
   },
   props: {},
-  methods: {},
+  methods: {}
 };
 </script>
 
-<style   scoped>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -65,12 +72,38 @@ body {
   background-color: #d2eaea;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFD2EAEA', endColorstr='#FFF7EEC3');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QyZWFlYSIvPjxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSIjZjlmOWY5Ii8+PHN0b3Agb2Zmc2V0PSI0OSUiIHN0b3AtY29sb3I9IiNmOWY5ZjkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmN2VlYzMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QyZWFlYSIvPjxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSIjZjlmOWY5Ii8+PHN0b3Agb2Zmc2V0PSI0OSUiIHN0b3AtY29sb3I9IiNmOWY5ZjkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmN2VlYzMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=");
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(0%, #d2eaea), color-stop(49%, #f9f9f9), color-stop(49%, #f9f9f9), color-stop(100%, #f7eec3));
-  background-image: -moz-linear-gradient(left bottom, #d2eaea 0%, #f9f9f9 49%, #f9f9f9 49%, #f7eec3 100%);
-  background-image: -webkit-linear-gradient(left bottom, #d2eaea 0%, #f9f9f9 49%, #f9f9f9 49%, #f7eec3 100%);
-  background-image: linear-gradient(to right top, #d2eaea 0%, #f9f9f9 49%, #f9f9f9 49%, #f7eec3 100%);
+  background-image: -webkit-gradient(
+    linear,
+    0% 100%,
+    100% 0%,
+    color-stop(0%, #d2eaea),
+    color-stop(49%, #f9f9f9),
+    color-stop(49%, #f9f9f9),
+    color-stop(100%, #f7eec3)
+  );
+  background-image: -moz-linear-gradient(
+    left bottom,
+    #d2eaea 0%,
+    #f9f9f9 49%,
+    #f9f9f9 49%,
+    #f7eec3 100%
+  );
+  background-image: -webkit-linear-gradient(
+    left bottom,
+    #d2eaea 0%,
+    #f9f9f9 49%,
+    #f9f9f9 49%,
+    #f7eec3 100%
+  );
+  background-image: linear-gradient(
+    to right top,
+    #d2eaea 0%,
+    #f9f9f9 49%,
+    #f9f9f9 49%,
+    #f7eec3 100%
+  );
 }
 
 div.container {
@@ -80,9 +113,12 @@ div.container {
   height: 470px;
   text-align: center;
   background: #fff;
-  -moz-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1), 0px 60px 75px -25px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1), 0px 60px 75px -25px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1), 0px 60px 75px -25px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1),
+    0px 60px 75px -25px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1),
+    0px 60px 75px -25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1),
+    0px 60px 75px -25px rgba(0, 0, 0, 0.2);
   cursor: default;
 }
 div.container img.img-fruit {
@@ -136,7 +172,8 @@ div.container div.properties {
   margin-top: 20px;
   height: 130px;
 }
-div.container div.properties:before, div.container div.properties:after {
+div.container div.properties:before,
+div.container div.properties:after {
   content: " ";
   display: inline-block;
 }
@@ -239,5 +276,4 @@ div.credit img {
 }
 
 /* End Credit Style */
-
 </style>

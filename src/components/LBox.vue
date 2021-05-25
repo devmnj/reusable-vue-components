@@ -1,17 +1,16 @@
 <template>
   <div class="box-tech">
-        <div class="content">
-          <center><img src="img" alt=""></center>
-          <p>DYNAMICWEB</p>
-          <div class="desc">
-          <slot name="desc">
-            <center><div class="line"></div></center>
-            <p>Out-of-the box CMS, E-commerce, PIM and Marketing platform.</p>
-          </slot>
-          </div>
-
-        </div>
+    <div class="content">
+      <center><img src="img" alt="" /></center>
+      <p>DYNAMICWEB</p>
+      <div class="desc">
+        <slot name="desc">
+          <center><div class="line"></div></center>
+          <p>Out-of-the box CMS, E-commerce, PIM and Marketing platform.</p>
+        </slot>
       </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -28,13 +27,13 @@ export default {
     return {};
   },
   props: {
-     img:{
-      trpe:String,
-      default:"https://www.e-bureauet.dk/media/1360/icon-dynamicweb.png"
+    img: {
+      trpe: String,
+      default: "https://www.e-bureauet.dk/media/1360/icon-dynamicweb.png"
     }
   },
- 
-  methods: {},
+
+  methods: {}
 };
 </script>
 

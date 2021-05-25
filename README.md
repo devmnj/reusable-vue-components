@@ -1,9 +1,9 @@
 # About
 This project contain a set of reusable vuejs components for web development using **Bulma** CSS.  
 ## Demo
-A [demo](https://oh-vue-components.vercel.app/) of these component is the best way to explore..
+A [demo](https://oh-vue-components.vercel.app/) of these components is the best way to explore..
 # Animation and CSS
-The CSS animation and other class is adapted from codepen and from other resources. All I do is the Vue part. **Thanks for the awesome animation and design**
+Some of the CSS animation and other class is adapted from codepen authors and from other resources. All I do is the Vue part and Bulma. **Thanks for the awesome animation and design**
 
 # Components
 
@@ -22,7 +22,8 @@ The CSS animation and other class is adapted from codepen and from other resourc
 13. OCard      - Picture with more info 
 
 ## How to use
-How to use the component in your projects ? drag and drop components to your project. 
+How to use the component in your projects ? Donwload or clone the project and
+ drag and drop components to your project. 
 
 Install Bulma
 ````
@@ -70,10 +71,6 @@ export default {
 </script>
 
 ```
-
- 
-
-
 
 ### More giudes and docs avaibale @ developer site
 See [JavaScript Superuser](https://javascriptsu.wordpress.com).

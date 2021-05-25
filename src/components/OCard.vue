@@ -1,43 +1,51 @@
 <template>
-<div>
-  
-  <div class="card">
-    <slot name="img">
-      <div class="image">
-        <img
-          src="https://images.unsplash.com/photo-1574100004472-e536d3b6bacc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-        />
-      </div>
-    </slot>
-    <div class="details">
-      <div class="center">
-        <slot name="details">
-          <h1>Someone nonsense<br /><span>team leader</span></h1>
-          <p>
-            Lorem ipsum is simple dummy text on the printing and typesetting industry.
-          </p>
-          <ul>
-            <li>
-              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
-          </ul>
-        </slot>
+  <div>
+    <div class="card">
+      <slot name="img">
+        <div class="image">
+          <img
+            src="https://images.unsplash.com/photo-1574100004472-e536d3b6bacc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+          />
+        </div>
+      </slot>
+      <div class="details">
+        <div class="center">
+          <slot name="details">
+            <h1>Someone nonsense<br /><span>team leader</span></h1>
+            <p>
+              Lorem ipsum is simple dummy text on the printing and typesetting
+              industry.
+            </p>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-google-plus" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </slot>
+        </div>
       </div>
     </div>
-  </div></div>
-
+  </div>
 </template>
 
 <script>
@@ -48,12 +56,11 @@ export default {
     return {};
   },
   props: {},
-  methods: {},
+  methods: {}
 };
 </script>
 
 <style scoped>
- 
 .card {
   position: relative;
   /* top: 50%; */

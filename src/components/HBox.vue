@@ -11,8 +11,8 @@
       <slot name="hcontent">
         <h1>E ECOMMERCE</h1>
         <p>
-          We are specialised in different CMS platforms so we can offer the best advice
-          for our clients
+          We are specialised in different CMS platforms so we can offer the best
+          advice for our clients
         </p>
       </slot>
     </div>
@@ -28,39 +28,38 @@
 export default {
   name: "HBox",
   created() {},
-   
-  
+
   data() {
     return {};
   },
   props: {
-    img:{
-      trpe:String,
-      default:"https://www.e-bureauet.dk/media/1065/competency-webshop.svg"
+    img: {
+      trpe: String,
+      default: "https://www.e-bureauet.dk/media/1065/competency-webshop.svg"
     },
     effect: {
       type: String,
-      default: "content-hover",
-    },
-  },
-  computed: {
-    getClass(){
-      var contClass="";
-      var aniClass="";
-      switch (this.effect) {
-        case 'box-out':
-          contClass="content";
-          aniClass="content-hover";
-          break;           
-        default:
-          contClass="content";
-          aniClass="content-hover2";
-          break;
-      }     
-      return [contClass,aniClass];
+      default: "content-hover"
     }
   },
-  methods: {},
+  computed: {
+    getClass() {
+      var contClass = "";
+      var aniClass = "";
+      switch (this.effect) {
+        case "box-out":
+          contClass = "content";
+          aniClass = "content-hover";
+          break;
+        default:
+          contClass = "content";
+          aniClass = "content-hover2";
+          break;
+      }
+      return [contClass, aniClass];
+    }
+  },
+  methods: {}
 };
 </script>
 
@@ -188,5 +187,4 @@ body .box:hover > .content-hover2 {
   transform: scale(1, 1);
   cursor: pointer;
 }
- 
 </style>

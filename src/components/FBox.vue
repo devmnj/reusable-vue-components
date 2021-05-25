@@ -1,12 +1,9 @@
 <template>
-  <div
-    class="box2"
-    style="background-image: url(`bimg`)"
-  >
+  <div class="box2" style="background-image: url(`bimg`)">
     <div class="hover">
-    <slot name="content">
-      <h1>Hjemmeværnet</h1>
-      <p>The site is based on parallax ribbons and is fully responsive.</p>
+      <slot name="content">
+        <h1>Hjemmeværnet</h1>
+        <p>The site is based on parallax ribbons and is fully responsive.</p>
       </slot>
     </div>
   </div>
@@ -26,13 +23,13 @@ export default {
     return {};
   },
   props: {
-     bimg:{
-      trpe:String,
-      default:"https://www.e-bureauet.dk/media/1351/case-hjv.jpg"
+    bimg: {
+      trpe: String,
+      default: "https://www.e-bureauet.dk/media/1351/case-hjv.jpg"
     }
   },
- 
-  methods: {},
+
+  methods: {}
 };
 </script>
 
