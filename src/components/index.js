@@ -10,12 +10,17 @@ import FBox from "./text/FBox.vue";
 import HBox from "./text/HBox.vue";
 import LBox from "./text/LBox.vue";
 
-
 export {
     CMenu,
     FImgCard,
     OCard,
     ImgCards,
-    PCard, Profiler, PostCard, sidebar, FBox, HBox, LBox
+    PCard, 
+    Profiler, 
+    PostCard, 
+    sidebar, 
+    FBox, 
+    HBox, 
+    LBox
 
 }

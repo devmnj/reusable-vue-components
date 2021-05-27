@@ -20,6 +20,8 @@ Some of the CSS animation and other class is adapted from codepen authors and fr
 11. Profiler   - Tween Profile picture
 12  SCard      - Reusable Product Card with Picture on Top
 13. OCard      - Picture with more info 
+14. Sidebar    - A sidebar with opening pane
+15. TextBoxes  - FBox,HBox,LBox  
 
 ## How to use
 How to use the component in your projects ? Donwload or clone the project and
