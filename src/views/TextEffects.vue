@@ -37,9 +37,8 @@
 
 <script>
 // @ is an alias to /src
-import HBox from "../components/HBox.vue";
-import FBox from "../components/FBox.vue";
-import LBox from "../components/LBox.vue";
+import {HBox,FBox ,LBox} from "../components";
+ 
 
  
 

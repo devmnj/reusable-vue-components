@@ -6,7 +6,7 @@ import App from "./App.vue";
 import router from "./router";
 import Buefy from "buefy";
 import "buefy/dist/buefy.css";
-import gitfooter from "@/components/Gitfooter";
+import gitfooter from "@/components/site_components/Gitfooter";
 //icons
 Vue.component("git-footer", gitfooter);
 Vue.config.productionTip = false;

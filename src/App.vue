@@ -34,7 +34,6 @@
           <router-link class="navbar-item" to="/posts">Featured</router-link>
           <router-link class="navbar-item" to="/profile">Profile</router-link>
           <router-link class="navbar-item" to="/text">Text Effects</router-link>
-
           <router-link class="navbar-item" to="/gallery">Gallery</router-link>
 
           <!-- <div class="navbar-item has-dropdown is-hoverable">
@@ -86,7 +85,7 @@
 </template>
 
 <script>
-import sidebar from "@/components/sidebar.vue";
+import {sidebar} from "@/components";
 import OhVueIcon from "oh-vue-icons";
 import { FcAbout } from "oh-vue-icons/icons";
 OhVueIcon.add(FcAbout);

@@ -29,8 +29,7 @@
 
 <script>
 // @ is an alias to /src
-import PCard from "../components/PCard.vue";
-import HSVGCard from "../components/HoverCard.vue";
+import {PCard,HSVGCard} from "../components";
 
  
 

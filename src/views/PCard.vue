@@ -31,8 +31,7 @@
 
 <script>
 // @ is an alias to /src
-import FImgCard from "@/components/AniFeaturedImage";
-import PostCard from "@/components/PostCard";
+import {FImgCard,PostCard} from "@/components";
 
 // import OhVueIcon from "oh-vue-icons";
 
