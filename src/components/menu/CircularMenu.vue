@@ -1,5 +1,5 @@
 <template>
-  <div>
+ 
     <nav class="menu-wrapper">
       <button
         v-if="hasMenuClicked === false"
@@ -14,7 +14,7 @@
       <button
         v-if="hasMenuClicked === true"
         @click="(hasMenuClicked = false), (hasCloseClicked = true)"
-        :class="['menu-btn', { clicked: hasMenuClicked }]"
+        :class="['menu-btn', { 'clicked': hasMenuClicked }]"
       >
         <i></i>
         <i></i>
@@ -22,53 +22,66 @@
         <span class="ripple"></span>
       </button>
 
-      {{ hasMenuClicked }}
-      <ul :class="['menu', { open: hasMenuClicked }]">
-        <li class="menuitem-wrapper">
-          <div class="icon-holder">
+     
+      <ul :class="['menu', { 'open': hasMenuClicked }]">
+        
+        <li class="menuitem-wrapper" >
+        
+          <div :class="['menuitem-wrapper',{'spin':hasMIClicked}]" @click="hasMIClicked=true">
+          <slot name="icon1">
             <a href="#" class="menu-item">
-              <i class="material-icons">home</i>
+              <oh-s-icon class="mt-1" name="oi-octoface" scale="1.5" />
             </a>
+          </slot>
           </div>
           <svg class="circle-holder">
             <circle r="88" cx="80%" cy="50%" fill="none"></circle>
           </svg>
         </li>
-        <li class="menuitem-wrapper">
+
+        <li :class="['menuitem-wrapper',{'spin':hasMIClicked}]" @click="hasMIClicked=true">
           <div class="icon-holder">
+          <slot name="icon2">
             <a href="#" class="menu-item">
-              <i class="material-icons">face</i>
+              <oh-s-icon class="mt-1" name="bi-twitter" scale="1.5" />
             </a>
+            </slot>
           </div>
           <svg class="circle-holder">
             <circle r="88" cx="50%" cy="50%" fill="none"></circle>
           </svg>
         </li>
-        <li class="menuitem-wrapper">
+        <li :class="['menuitem-wrapper',{'spin':hasMIClicked}]" @click="hasMIClicked=true">
           <div class="icon-holder">
+            <slot name="icon3">
             <a href="#" class="menu-item">
-              <i class="material-icons">android</i>
+               <oh-s-icon class="mt-1" name="fa-wordpress" scale="1.5" />
             </a>
+            </slot>
           </div>
           <svg class="circle-holder">
             <circle r="88" cx="50%" cy="50%" fill="none"></circle>
           </svg>
         </li>
-        <li class="menuitem-wrapper">
+        <li :class="['menuitem-wrapper',{'spin':hasMIClicked}]" @click="hasMIClicked=true">
           <div class="icon-holder">
+          <slot name="icon4">
             <a href="#" class="menu-item">
-              <i class="material-icons">shopping_cart</i>
+             <oh-s-icon class="mt-1" name="fa-home" scale="1.5" />
             </a>
+            </slot>
           </div>
           <svg class="circle-holder">
-            <circle r="88" cx="50%" cy="50%" fill="none"></circle>
+            <circle r="88" cx="50%" cy="50%" fill="grey"></circle>
           </svg>
         </li>
-        <li class="menuitem-wrapper">
+        <li :class="['menuitem-wrapper',{'spin':hasMIClicked}]" @click="hasMIClicked=true">
           <div class="icon-holder">
+           <slot name="icon5">
             <a href="#" class="menu-item">
-              <i class="material-icons">room</i>
+              <oh-s-icon class="mt-1" name="fa-flag" scale="1.5" />
             </a>
+            </slot>
           </div>
           <svg class="circle-holder">
             <circle r="88" cx="50%" cy="50%" fill="none"></circle>
@@ -76,7 +89,7 @@
         </li>
       </ul>
     </nav>
-  </div>
+  
 </template>
 
 <script>
@@ -87,10 +100,39 @@ export default {
     return {
       hasMenuClicked: false,
       hasCloseClicked: false,
+      hasMIClicked:false
     };
   },
+  watch: {
+    hasMenuClicked(){
+      // if(this.hasMenuClicked){ }else{this.hasMIClicked=true; }
+     this.hasMIClicked=false;
+      // this.hasMenuClicked=false;
+      this.hasCloseClicked= false ;
+    
+    },
+     hasMIClicked(){
+       setTimeout(() => {
+         this.hasMenuClicked=false;
+
+       }, 800);
+    //       // this.hasMIClicked=false; 
+    //   this.hasMenuClicked=false;
+    //   // this.hasCloseClicked= false ;
+    }
+  },
   props: {},
-  methods: {},
+  methods: {
+    mi_click(){
+     this.hasMIClicked=true; 
+    //  setInterval(() => {
+    //    this.hasMenuClicked=false;  this.hasCloseClicked=false;
+    //  }, 900);
+      //  
+      // 
+    
+    }
+  },
 };
 </script>
 
@@ -136,7 +178,7 @@ a {
   text-align: center;
 }
 .menu li.spin {
-  z-index: 5;
+  z-index: 1;
 }
 .menu li.spin .icon-holder {
   -webkit-animation: spin 0.7s linear forwards;
@@ -191,7 +233,7 @@ a {
 .circle-holder circle {
   width: 100%;
   height: 100%;
-  stroke-width: 4rem;
+  stroke-width: 14rem;
   stroke-dasharray: 560;
   stroke-dashoffset: 560;
   stroke-linecap: round;
@@ -370,7 +412,7 @@ a {
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
+    opacity: 1;
   }
 }
 @-webkit-keyframes dash {

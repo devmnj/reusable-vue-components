@@ -1,24 +1,34 @@
 <template>
   <div class="columns section">
     <div class="column">
-      <c-menu />
+      <c-menu/>
     </div>
 
     <div class="column">
-      <FImgCard />
+      <SMenu>
+        <template slot="stripe1">
+          <template slot="menu">
+            <div>Menu1</div>
+          </template>
+          <template slot="submenu">
+            <div>SubMenu Item</div>
+          </template>
+        </template>
+        
+      </SMenu>
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import { FImgCard, CMenu } from "../components";
+import { SMenu, LWave } from "../components";
 
 export default {
   name: "Gallery",
   components: {
-    FImgCard,
-    "c-menu": CMenu,
+    SMenu,
+    "c-menu": LWave,
   },
 };
 </script>

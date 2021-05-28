@@ -34,7 +34,10 @@
           <router-link class="navbar-item" to="/posts">Featured</router-link>
           <router-link class="navbar-item" to="/profile">Profile</router-link>
           <router-link class="navbar-item" to="/text">Text Effects</router-link>
-          <router-link class="navbar-item" to="/gallery">Gallery</router-link>
+          <router-link class="navbar-item" to="/loaders">Loader</router-link>
+          <router-link class="navbar-item" to="/menus">Menu</router-link>
+          
+          <!-- <router-link class="navbar-item" to="/gallery">Gallery</router-link> -->
 
           <!-- <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> More </a>

@@ -6,6 +6,8 @@ import ACards from "../views/ACards.vue";
 import PCard from "../views/PCard.vue";
 import Profile from "../views/Profile.vue";
 import TextEffects from "../views/TextEffects.vue";
+import Loaders from "../views/Loaders.vue";
+import Menu from "../views/Menu.vue";
 
 Vue.use(VueRouter);
 
@@ -14,6 +16,12 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home
+  },
+
+  {
+    path: "/loaders",
+    name: "Loaders",
+    component: Loaders
   },
   {
     path: "/profile",
@@ -24,6 +32,11 @@ const routes = [
     path: "/text",
     name: "TextEffects",
     component: TextEffects
+  },
+  {
+    path:"/menus",
+    name:"Menu",
+    component: Menu
   },
   {
     path: "/posts",
