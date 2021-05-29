@@ -8,7 +8,7 @@ import Profile from "../views/Profile.vue";
 import TextEffects from "../views/TextEffects.vue";
 import Loaders from "../views/Loaders.vue";
 import Menu from "../views/Menu.vue";
-
+import Login from "../views/Login.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -17,7 +17,11 @@ const routes = [
     name: "Home",
     component: Home
   },
-
+  {
+    path: "/login",
+    name: "this.$Loading.finish()",
+    component: Login
+  },
   {
     path: "/loaders",
     name: "Loaders",
@@ -65,7 +69,8 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  routes
+  routes,
+ 
 });
 
 export default router;

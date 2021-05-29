@@ -1,5 +1,13 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about section">
+   <PNF class="section"/>
   </div>
 </template>
+<script>
+import {PNF} from '@/components'
+export default {
+  components:{
+    PNF
+  }
+}
+</script>

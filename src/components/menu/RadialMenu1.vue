@@ -1,26 +1,31 @@
 <template>
   <div>
-   <div class="base">
-   <div class="menu">
-      <div class="icon">
-         <div class="bar"></div>
+    {{ isOpened }}
+    <div :class="['base', { close: isOpened }]">
+      <div @click="clicked" class="menu">
+        <div class="icon">
+          <div class="bar"></div>
+        </div>
       </div>
-   </div>
-   <div class="icons">
-      <i class="fa fa-user" aria-hidden="true"></i>
-      <i class="fa fa-calendar-o" aria-hidden="true"></i>
-      <i class="fa fa-tachometer" aria-hidden="true"></i>
-   </div>
-   <div class="section">
-      <div class="cover1">
-         <div class="cover2">
-            <a class="content" href="#calender"></a>
-         </div>
+      <div   class="icons">
+        <!-- <oh-s-icon class="mt-1" name="fa-flag" scale="1.5" />
+        <oh-s-icon class="mt-1" name="fa-home" scale="1.5" />
+        <oh-s-icon class="mt-1" name="md-facebook" scale="1.5" />
+         -->
+        <i class="fa fa-flag" aria-hidden="true"></i>
+       <i class="fa fa-calendar-o" aria-hidden="true"></i>
+        <i class="fa fa-tachometer" aria-hidden="true"></i>
       </div>
-   </div>
-   <a class="section-static top" href="#profile"></a>
-   <a class="section-static bottom" href="#dashboard"></a>
-</div>
+      <div :class="{'section':isOpened}">
+        <div class="cover1">
+          <div class="cover2" >
+            <a class="content" href="#calender1"></a>
+          </div>
+        </div>
+      </div>
+      <a class="section-static top" href="#profile"></a>
+      <a class="section-static bottom" href="#dashboard"></a>
+    </div>
   </div>
 </template>
 
@@ -42,26 +47,6 @@ export default {
     },
   },
   props: {},
-  mounted() {
-     let externalScript = document.createElement('script')
-    externalScript.setAttribute('src', 'https://codepen.io/z-/pen/a8e37caf2a04602ea5815e5acedab458.js')
-    document.head.appendChild(externalScript)
-
- let externalScript1 = document.createElement('script')
-    externalScript1.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
-    document.head.appendChild(externalScript1)
-
-let externalScript11 = document.createElement('script')
-    externalScript11.setAttribute('src', 'https://codepen.io/z-/pen/2677821722cd9e02c2c882a17c5b2072.js')
-    document.head.appendChild(externalScript11)
-
- let externalScript12 = document.createElement('script')
-    externalScript12.setAttribute('src', 'https://codepen.io/z-/pen/0a1bedbb8ca05b9afd329264fca7b921')
-    document.head.appendChild(externalScript12)
-
-
-    
-  },
   methods: {
     clicked() {
       
@@ -84,8 +69,6 @@ let externalScript11 = document.createElement('script')
 </script>
 
 <style lang="css" scoped>
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
 body {
   background-color: #21264b;
   overflow-x: hidden;

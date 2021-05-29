@@ -1,35 +1,47 @@
 <template>
   <div class="columns section">
     <div class="column">
-      <c-menu/>
+      <c-menu :selColor="col" @colPicked="changeColor"> </c-menu>
+      {{ col }}
     </div>
 
-    <div class="column">
-      <SMenu>
-        <template slot="stripe1">
-          <template slot="menu">
-            <div>Menu1</div>
-          </template>
-          <template slot="submenu">
-            <div>SubMenu Item</div>
-          </template>
-        </template>
-        
-      </SMenu>
+    <div class="column" :style="{ background: col }">
+    <CheckGroup/>
+    <p>
+    <whale-animation/>
+    </p>
     </div>
   </div>
+  
 </template>
 
 <script>
 // @ is an alias to /src
-import { SMenu, LWave } from "../components";
+import { ColPicker ,CheckGroup,AWhale } from "../components";
 
 export default {
   name: "Gallery",
-  components: {
-    SMenu,
-    "c-menu": LWave,
+  data() {
+    return {
+      col: "",
+      counter: 0,
+    };
   },
+  methods: {
+    changeColor(value) {
+      this.col = value;
+    },
+    getqt(value) {
+      this.counter = value;
+    },
+  },
+  components: {
+    "c-menu": ColPicker,
+    'whale-animation':AWhale,
+    CheckGroup
+     
+  },
+
 };
 </script>
 

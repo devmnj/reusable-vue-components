@@ -7,11 +7,7 @@
     >
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
-          <img
-            src="https://bulma.io/images/bulma-logo.png"
-            width="112"
-            height="28"
-          />
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
         </a>
 
         <a
@@ -36,8 +32,8 @@
           <router-link class="navbar-item" to="/text">Text Effects</router-link>
           <router-link class="navbar-item" to="/loaders">Loader</router-link>
           <router-link class="navbar-item" to="/menus">Menu</router-link>
-          
-          <!-- <router-link class="navbar-item" to="/gallery">Gallery</router-link> -->
+ <router-link class="navbar-item" to="/login">Login</router-link>
+          <router-link class="navbar-item" to="/gallery">Gallery</router-link>
 
           <!-- <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> More </a>
@@ -69,15 +65,14 @@
         </div>
       </div>
     </nav>
+
     <div class="columns">
       <div class="column has-background-inf1o is-1 is-flex">
         <sidebar bgColor="has-background-dark" style="top: 60px">
-          <slot>
-            <div class="sidebar-position" @click="snackbar">
-              <v-icon fill="grey" name="fc-about" scale="1.8" />
-              <span>Position 2</span>
-            </div>
-          </slot>
+          <div class="sidebar-position" @click="snackbar">
+            <v-icon fill="grey" name="fc-about" scale="1.8" />
+            <span>Position 2</span>
+          </div>
         </sidebar>
       </div>
       <div class="has-background-success1 section column">
@@ -88,20 +83,20 @@
 </template>
 
 <script>
-import {sidebar} from "@/components";
+// import Base from '@/layout/Default.vue'
+import { sidebar } from "@/components";
 import OhVueIcon from "oh-vue-icons";
-import { FcAbout } from "oh-vue-icons/icons";
-OhVueIcon.add(FcAbout);
-
+ import { FcAbout } from "oh-vue-icons/icons";
+ OhVueIcon.add(FcAbout)
 export default {
   components: {
     sidebar,
-    "v-icon": OhVueIcon
+    "v-icon": OhVueIcon,
   },
   methods: {
     snackbar() {
       this.$buefy.snackbar.open(`Thank you, join me on github`);
-    }
-  }
+    },
+  },
 };
 </script>

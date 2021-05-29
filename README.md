@@ -18,12 +18,17 @@ Some of the CSS animation and other class is adapted from codepen authors and fr
 9.  FBox       - Fading Animation
 10. Clash Card - Clash of the Clan style
 11. Profiler   - Tween Profile picture
-12  SCard      - Reusable Product Card with Picture on Top
+12. SCard      - Reusable Product Card with Picture on Top
 13. OCard      - Picture with more info 
 14. Sidebar    - A sidebar with opening pane
 15. TextBoxes  - FBox,HBox,LBox
 16. CMenu      - Circular Menu  component 
 17. LWave      - A wave loader for Vue
+18. ColorPicker- A simple Color Pallet
+19. CheckGroup - CheckGroup
+20. 404
+21. CCounter   - Item counter
+
 
 ## How to use
 How to use the component in your projects ? Donwload or clone the project and
