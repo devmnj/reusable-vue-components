@@ -32,7 +32,7 @@
           <router-link class="navbar-item" to="/text">Text Effects</router-link>
           <router-link class="navbar-item" to="/loaders">Loader</router-link>
           <router-link class="navbar-item" to="/menus">Menu</router-link>
- <router-link class="navbar-item" to="/login">Login</router-link>
+ <!-- <router-link class="navbar-item" to="/login">Login</router-link> -->
           <router-link class="navbar-item" to="/gallery">Gallery</router-link>
 
           <!-- <div class="navbar-item has-dropdown is-hoverable">

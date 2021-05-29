@@ -8,7 +8,7 @@
     <div class="column" :style="{ background: col }">
     <CheckGroup/>
     <p>
-    <whale-animation/>
+    <!-- <whale-animation/> -->
     </p>
     </div>
   </div>
@@ -17,7 +17,7 @@
 
 <script>
 // @ is an alias to /src
-import { ColPicker ,CheckGroup,AWhale } from "../components";
+import { ColPicker ,CheckGroup } from "../components";
 
 export default {
   name: "Gallery",
@@ -37,7 +37,7 @@ export default {
   },
   components: {
     "c-menu": ColPicker,
-    'whale-animation':AWhale,
+    // 'whale-animation':AWhale,
     CheckGroup
      
   },
